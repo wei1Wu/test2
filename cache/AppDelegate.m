@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "people.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,23 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    people *wuwei = [[people alloc]init];
+    wuwei.name = @"david";
+    wuwei.age = 26;
+    
+    NSMutableData *data = [[NSMutableData alloc]init];
+    NSKeyedArchiver *archer = [[NSKeyedArchiver alloc]initForWritingWithMutableData:data];
+    [archer encodeObject:wuwei];
+    [archer finishEncoding];
+    
+    [data writeToFile:@"/Users/davissonwu/Downloads/wuwei" atomically:false];
+//    NSData *data = [NSData dataWithContentsOfFile:@"/Users/davissonwu/Downloads/wuwei"];
+//     NSKeyedUnarchiver *archier = [[NSKeyedUnarchiver alloc]initForReadingWithData:data];
+//   people *wuwei = [archier decodeObject];
+    
+    NSLog(@"wuwei 名字：%@ 年龄: %d",wuwei.name,wuwei.age);
     return YES;
 }
 

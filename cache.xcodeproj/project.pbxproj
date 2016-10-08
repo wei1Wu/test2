@@ -13,6 +13,7 @@
 		29BD90AF1DA16C3D00F5EBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BD90AD1DA16C3D00F5EBC4 /* Main.storyboard */; };
 		29BD90B11DA16C3D00F5EBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29BD90B01DA16C3D00F5EBC4 /* Assets.xcassets */; };
 		29BD90B41DA16C3D00F5EBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BD90B21DA16C3D00F5EBC4 /* LaunchScreen.storyboard */; };
+		29BD90BD1DA16CC700F5EBC4 /* people.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD90BC1DA16CC700F5EBC4 /* people.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		29BD90B01DA16C3D00F5EBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29BD90B31DA16C3D00F5EBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29BD90B51DA16C3D00F5EBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29BD90BB1DA16CC700F5EBC4 /* people.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = people.h; sourceTree = "<group>"; };
+		29BD90BC1DA16CC700F5EBC4 /* people.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = people.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				29BD90A71DA16C3D00F5EBC4 /* AppDelegate.h */,
 				29BD90A81DA16C3D00F5EBC4 /* AppDelegate.m */,
+				29BD90BB1DA16CC700F5EBC4 /* people.h */,
+				29BD90BC1DA16CC700F5EBC4 /* people.m */,
 				29BD90AA1DA16C3D00F5EBC4 /* ViewController.h */,
 				29BD90AB1DA16C3D00F5EBC4 /* ViewController.m */,
 				29BD90AD1DA16C3D00F5EBC4 /* Main.storyboard */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BD90BD1DA16CC700F5EBC4 /* people.m in Sources */,
 				29BD90AC1DA16C3D00F5EBC4 /* ViewController.m in Sources */,
 				29BD90A91DA16C3D00F5EBC4 /* AppDelegate.m in Sources */,
 				29BD90A61DA16C3D00F5EBC4 /* main.m in Sources */,
